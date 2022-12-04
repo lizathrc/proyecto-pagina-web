@@ -1,4 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: Nunito; }
+
+body {
+  background-color: whitesmoke; }
+
+header {
+  background-color: #E09137;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 6.5rem;
+  padding: 0% 5%;
+  align-items: center;
+  margin-bottom: 8rem; }
+  header #menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    margin-right: 8rem; }
+    header #menu div {
+      display: flex;
+      flex-direction: row; }
+    header #menu img {
+      height: 100%; }
+    header #menu p {
+      color: #81531F;
+      font-size: 2.6em;
+      font-weight: normal; }
+  header #logo {
+    text-transform: uppercase;
+    color: #F1E8B0;
+    font-size: 4.3em;
+    margin-right: 3.5rem; }
+  header .search-bar {
+    background-color: #FECE2F;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: row;
+    width: 44rem;
+    height: 65%;
+    border-radius: 0.85rem;
+    align-items: center;
+    margin-left: 2.5rem; }
+    header .search-bar div {
+      display: flex;
+      flex-direction: row; }
+    header .search-bar .category {
+      width: 33%;
+      height: 100%;
+      border-right: solid 0.1em;
+      border-color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      header .search-bar .category p {
+        margin-left: 1em;
+        font-size: 1.8em;
+        margin-left: 18%; }
+      header .search-bar .category img {
+        margin-left: 10%;
+        width: 20%;
+        height: 60%; }
+    header .search-bar .searchere {
+      display: flex;
+      flex-direction: row;
+      width: 66%; }
+      header .search-bar .searchere p {
+        margin-left: 33%;
+        font-size: 1.7em;
+        width: 100%; }
+      header .search-bar .searchere img {
+        margin-right: 1em; }
+  header #account {
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    header #account img {
+      height: 70%; }
+
 h1 {
-  color: aliceblue; }
+  font-size: 8.2em;
+  padding: 0% 5%;
+  color: #E09137; }
+
+h1::first-letter {
+  text-transform: capitalize; }
+
+.welcome-page__main {
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: row; }
+  .welcome-page__main .main__information {
+    width: 100%; }
+    .welcome-page__main .main__information .description {
+      font-size: 3.2em;
+      opacity: 0.5;
+      margin-bottom: 5rem; }
+    .welcome-page__main .main__information .information {
+      width: 100%;
+      font-size: 3.51em; }
+    .welcome-page__main .main__information a {
+      color: black;
+      padding: 1.5% 1.5%;
+      border: solid 0.4rem #B1CA9C;
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      border-radius: 0.5em;
+      margin: 15rem;
+      top: 8rem;
+      position: relative; }
+  .welcome-page__main .main__image {
+    width: 80%; }
+    .welcome-page__main .main__image .img {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

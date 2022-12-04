@@ -5,31 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#">menu</a> 
-        <a href="#">logo</a>
-        <div class="search-bar">search-bar</div>
-        <a href="#">account</a>
+        <a id="menu" href="#">
+            <img src="./images/menu.png" alt="">
+            <p>
+                menu
+            </p>
+        </a> 
+        <a id="logo" href="#">never'slate</a>
+        <div class="search-bar">
+            <div class="category">
+                <p>
+                    category
+                </p>
+                <img src="./images/seemore.png" alt="">
+            </div>
+            <div class="searchere">
+                <p>
+                    search here
+                </p>
+                <img src="./images/search.svg" alt="">
+            </div>
+        </div>
+        <a id="account" href="#">
+            <img src="./images/account.svg" alt="">
+        </a>
     </header>
+    <h1>
+        what are you waiting for?
+    </h1>
     <main class="welcome-page__main">
         <div class="main__information">
-            <h1>
-                what are you waiting?
-            </h1>
-            <p>
+            <p class="description">
                 start now and build your future
             </p>
-            <p>
+            <p class="information">
                 Lorem ipsum dolor sit amet, conse    ctetur adipiscing elit, sed do eiusm od tempor incididunt ut labore et d
                 olore magna aliqua.
             </p>
-            <a href="#">get started</a>
+            <a id="start-btn" href="#">let's start! <img src="./images/Vector (15).png" alt=""></a>
         </div>
         <div class="main__image">
-            <img src="./images/Find the way.png" alt="">
+            <img class="img" src="./images/Find the way.png" alt="">
             <nav>
                 <img src="./images/Vector (13).png" alt="">
                 <img src="./images/Vector (14).png" alt="">
