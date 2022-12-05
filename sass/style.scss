@@ -1,4 +1,4 @@
-
+$title-color: #E09137;
 * {
     padding: 0;
     margin: 0;
@@ -109,6 +109,10 @@ header {
 h1::first-letter {
     text-transform: capitalize;
 }
+
+//-----------------------------------------//
+
+//mainpage
 .welcome-page__main {
     width: 90%;
     height: max-content;
@@ -121,7 +125,7 @@ h1::first-letter {
         grid-area: title;
         width: 100%;
         font-size: 7.5em;
-        color: #E09137;
+        color: $title-color;
     }
     .main__information{
         grid-area: main__information;
@@ -182,7 +186,76 @@ h1::first-letter {
 
 }
 
+//-----------------------------------------//
 
+//our courses
+.courses-page__main {
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: row;
+    .main__information {
+        .tittle-oc {
+            width: 100%;
+            height: 65%;
+            font-size: 100%;
+            h1 {
+                font-size: 8em; 
+                color: $title-color;
+            }
+        }
+        .description {
+            font-size: 2.9em;
+            margin-left: 8px;
+            opacity: 0.5;
+        }
+    }
+    .main__image {
+        width: 20%;
+        height: 100%;
+        background-color: #E09137;
+    }
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    article {
+        margin-top: 5%;
+        width: 30em;
+        height: 24.15em;
+        background-color: #B1CA9C;
+    }
+    .marketing {
+        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+        background-size: cover;
+    }
+    .financial-managment {
+        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+        background-size: cover;
+    }
+    .mindfullness {
+        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+        background-size: cover;
+    }
+}
+
+.courses-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+    div {
+        width: 80em;
+        height: 20em;
+        background-color: $title-color;
+    }
+}
+
+//-----------------------------------------//
 
 
 
