@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: Nunito; }
+  
+  body {
+    background-color: whitesmoke;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  
+  header {
+    background-color: #E09137;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 0% 5% 0% 1.8%;
+    align-items: center;
+    margin-bottom: 8rem;
+    font-size: auto; }
+    header #menu {
+      width: 23%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5em;
+      margin-right: 10%; }
+      header #menu img {
+        width: 100%;
+        height: 100%; }
+    header #logo {
+      width: 60%;
+      height: 100%;
+      text-transform: uppercase;
+      color: #F1E8B0; }
+      header #logo img {
+        width: 100%;
+        height: 98%;
+        margin-top: 2%; }
+    header .search-bar {
+      background-color: #FECE2F;
+      opacity: 0.4;
+      display: flex;
+      flex-direction: row;
+      width: 30%;
+      height: 60%;
+      border-radius: 0.85rem;
+      align-items: center;
+      margin-left: 1rem; }
+      header .search-bar div {
+        display: flex;
+        flex-direction: row; }
+      header .search-bar .category {
+        width: 28%;
+        height: 100%;
+        padding: 2%;
+        border-right: solid 0.1em;
+        border-color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        header .search-bar .category p {
+          margin-left: 1em;
+          font-size: 1.1em; }
+        header .search-bar .category a {
+          margin-left: 10%;
+          width: 20%;
+          height: 100%; }
+      header .search-bar .searchere {
+        display: flex;
+        flex-direction: row;
+        width: 66%; }
+        header .search-bar .searchere p {
+          margin-left: 33%;
+          font-size: 1.1em;
+          width: 100%; }
+        header .search-bar .searchere a {
+          margin-right: 1em; }
+    header #account {
+      width: 7%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 1em; }
+      header #account img {
+        width: 100%; }
+  
+  .tittle {
+    padding: 0% 5%;
+    background-color: #6b5a47;
+    display: flex;
+    flex-direction: row;
+    height: auto; }
+    .tittle h1 {
+      font-size: 7em;
+      color: #E09137;
+      background-color: #B1CA9C; }
+    .tittle h1::first-letter {
+      text-transform: capitalize; }
+  
+  @media screen and (min-width: 380px) and (max-width: 2320px) {
+    .tittle {
+      height: auto; }
+  
+    .welcome-page__main .main__information .description {
+      font-size: 1.1em;
+      margin-bottom: 2rem; }
+    .welcome-page__main .main__information .information {
+      font-size: 1.3em; }
+  
+    .search-bar {
+      background-color: #6b5a47;
+      width: fit-content;
+      margin: 0% 5%; }
+      .search-bar .category {
+        width: fit-content;
+        height: 0%; }
+        .search-bar .category p {
+          display: none;
+          position: absolute;
+          visibility: hidden;
+          width: 1%; }
+        .search-bar .category a {
+          width: 10%;
+          margin-left: 0%; }
+      .search-bar .searchere {
+        width: 80%; } }
+  .welcome-page__main {
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: row; }
+    .welcome-page__main .main__information {
+      width: 100%; }
+      .welcome-page__main .main__information .description {
+        font-size: 3.2em;
+        opacity: 0.5;
+        margin-bottom: 5rem; }
+      .welcome-page__main .main__information .information {
+        width: 100%;
+        font-size: 3.51em; }
+      .welcome-page__main .main__information a {
+        color: black;
+        padding: 1.5% 1.5%;
+        border: solid 0.4rem #B1CA9C;
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        border-radius: 0.5em;
+        margin: 15rem;
+        top: 8rem;
+        position: relative; }
+    .welcome-page__main .main__image {
+      width: 80%; }
+      .welcome-page__main .main__image .img {
+        width: 100%; }
+  
+  /*# sourceMappingURL=style.css.map */
