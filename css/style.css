@@ -1,0 +1,163 @@
+/*limitado:cosas que ver*/
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+* {
+  padding: 0;
+  border: 0; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+
+.colours {
+  background-color: rgba(194, 199, 214, 0.5);
+  padding: 10%; }
+  .colours .brand-colours {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row; }
+    .colours .brand-colours div {
+      width: 17%;
+      height: 100%; }
+    .colours .brand-colours .on {
+      background-color: #424530; }
+    .colours .brand-colours .tw {
+      background-color: #E09137; }
+    .colours .brand-colours .tr {
+      background-color: #F1E8B0;
+      margin-right: 2%; }
+    .colours .brand-colours .fo {
+      background-color: #fECE2F; }
+    .colours .brand-colours .fi {
+      background-color: #A4C18B; }
+    .colours .brand-colours .si {
+      background-color: #81531F; }
+  .colours .others {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row; }
+    .colours .others div {
+      width: 17%;
+      height: 100%; }
+    .colours .others .on {
+      background-color: #000000; }
+    .colours .others .tw {
+      background-color: #FFFFFF; }
+    .colours .others .tr {
+      background-color: #C2C7D6;
+      margin-right: 2%; }
+    .colours .others .fo {
+      background-color: #97C2B6; }
+    .colours .others .fi {
+      background-color: #FECE2F; }
+    .colours .others .si {
+      background-color: #D80027; }
+    .colours .others .se {
+      background-color: #77929C; }
+
+.component {
+  background-color: rgba(194, 199, 214, 0.5);
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
+  .component .button--variant {
+    border: solid 1px #5d1e1e;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 2%;
+    width: fit-content; }
+    .component .button--variant button {
+      width: 10rem;
+      height: 3rem;
+      border-radius: 14px; }
+    .component .button--variant .default {
+      border: solid 2px #B1CA9C; }
+    .component .button--variant .hovered {
+      background-color: #B1CA9C; }
+    .component .button--variant .disabled {
+      background-color: rgba(177, 202, 156, 0.5); }
+  .component .search-bar--variant {
+    border: solid 1px #5d1e1e;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 2%;
+    width: fit-content;
+    /*limitado*/ }
+    .component .search-bar--variant .one {
+      display: flex;
+      flex-direction: row;
+      width: 15rem;
+      height: 3rem;
+      margin: 5px;
+      border-radius: 10rem;
+      background-color: #F1E8B0;
+      align-items: center; }
+      .component .search-bar--variant .one .category {
+        width: 30%; }
+      .component .search-bar--variant .one .search-place {
+        width: 69%; }
+    .component .search-bar--variant .search-bar--hovered {
+      border: solid 2px #81531F; }
+
+.field--variant {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; }
+  .field--variant div {
+    width: 10rem;
+    height: 10rem; }
+  .field--variant .field--default {
+    background-color: rgba(194, 199, 214, 0.5); }
+  .field--variant .field--filling {
+    background-color: rgba(194, 199, 214, 0.5);
+    border: solid 2px;
+    border-color: #A4C18B; }
+  .field--variant .field--error {
+    background-color: rgba(194, 199, 214, 0.5);
+    border: solid 2px;
+    border-color: #D80027; }
+
+.effects {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; }
+  .effects div {
+    width: 10rem;
+    height: 10rem; }
+  .effects .on {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(132, 132, 132, 0.25);
+    border-radius: 12px; }
+  .effects .tw {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(132, 132, 132, 0.25);
+    border-radius: 12px; }
+  .effects .tr {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 4px; }
+  .effects .fo {
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px; }
+  .effects .focus {
+    background: #FFFFFF;
+    border: 1px solid #536B40;
+    box-shadow: 0px 0px 0px 2px #033F63;
+    border-radius: 12px; }
+  .effects .btn-link {
+    background: #424530;
+    border-radius: 24px; }
+
+/*# sourceMappingURL=style.css.map */

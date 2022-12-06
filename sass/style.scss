@@ -1,261 +1,208 @@
-$title-color: #E09137;
+/*limitado:cosas que ver*/
+$general-width: 0% 5%;
+$success-color: #97C2B6;
+$warning-color: #FECE2F;
+$error-color: #D80027;
+$info-color: #77929C;
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 * {
     padding: 0;
-    margin: 0;
     border: 0;
-    text-decoration: none;
-    font-family: Nunito;
 }
-
 body {
-    background-color: whitesmoke;
-    font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 10px;
 }
 
-header {
-    background-color: #E09137;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: fit-content;
-    padding: 0% 5% 0% 1.8%;
-    align-items: center;
-    font-size: auto;
-    #menu {
-        width: 23%;
-        height: 100%;
+.colours {
+    background-color: rgba($color: #C2C7D6, $alpha: 0.5);
+    padding: 10%;
+    .brand-colours {
+        width: 100%;
+        height: 10rem;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 0.5em;
-        margin-right: 10%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-    #logo {
-        width: 60%;
-        height: 100%;
-        text-transform: uppercase;
-        color: #F1E8B0;
-        img {
-            width: 100%;
-            height: 98%;
-            margin-top: 2%;
-        }
-    }
-    .search-bar {
-        background-color: #FECE2F;
-        opacity: 0.4;
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        height: 60%;
-        border-radius: 0.85rem;
-        align-items: center;
-        margin-left: 1rem;
         div {
-            display: flex;
-            flex-direction: row;
-        }
-        .category {
-            width: 28%;
+            width: 17%;
             height: 100%;
-            padding: 2%;
-            border-right: solid 0.1em;
-            border-color: black;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            p {
-                margin-left: 1em;
-                font-size: 1.1em;
-            }
-            a {
-                margin-left: 10%;
-                width: 20%;
-                height: 100%;
-            }
         }
-        .searchere {
-            display: flex;
-            flex-direction: row;
-            width: 66%;
-            p {
-                margin-left: 33%;
-                font-size: 1.1em;
-                width: 100%;
-            }
-            a {
-                margin-right: 1em;
-            }
+        .on {
+            background-color: #424530;
+        }
+        .tw{
+            background-color: #E09137;
+        }
+        .tr{
+            background-color: #F1E8B0;
+            margin-right: 2%;
+        }
+        .fo{
+            background-color: #fECE2F;
+        }
+        .fi{
+            background-color: #A4C18B;
+        }
+        .si{
+            background-color: #81531F;
         }
     }
-    #account {
-        width: 7%;
-        height: 100%;
+    .others {
+        width: 100%;
+        height: 10rem;
         display: flex;
-        align-items: center;
-        margin-left: 1em;
-        img {
-            width: 100%;
-        }
-    }
-}
-h1::first-letter {
-    text-transform: capitalize;
-}
-
-//-----------------------------------------//
-
-//mainpage
-.welcome-page__main {
-    width: 90%;
-    height: max-content;
-    padding: 10% 5%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:    'title             title' 
-                            'main__information  main__image';
-    .title {
-        grid-area: title;
-        width: 100%;
-        font-size: 7.5em;
-        color: $title-color;
-    }
-    .main__information{
-        grid-area: main__information;
-        width: 100%;
-        height: 100%;
-        .description {
-            font-size: 100%;
-            opacity: 0.5;
-            margin-bottom: 17%;
-            p {
-                font-size: 2.8em;
-                margin-left: 10px;
-            }
-        }
-        .information {
-            width: 100%;
-            font-size: 100%;
-            p {
-                margin-left: 6%;
-                font-size: 3.23em;
-                line-height: 4.0625rem;
-            }
-        }
-        a {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            color: black;
-            border: solid 0.3rem #B1CA9C;
-            font-size: 100%;
-            text-transform: uppercase;
-            border-radius: 1em;
-            top: 8rem;
-            margin: 20%;
-            padding: 5% 5%;
-            opacity: 0.8;
-            align-items: center;
-            p {
-                letter-spacing: 0.3rem;
-                font-size: 1.2em;
-            }
-            img {
-                width: 10%;
-                scale: 0.45;
-                filter: brightness(1%);
-            }
-        }
-    }
-    .main__image {
-        grid-area: main__image;
-        width: 100%;
-        height: 100%;
-        .img {
-            width: 100%;
+        flex-direction: row;
+        div {
+            width: 17%;
             height: 100%;
         }
-    }
-
-}
-
-//-----------------------------------------//
-
-//our courses
-.courses-page__main {
-    padding: 10% 5%;
-    display: flex;
-    flex-direction: row;
-    .main__information {
-        .tittle-oc {
-            width: 100%;
-            height: 65%;
-            font-size: 100%;
-            h1 {
-                font-size: 8em; 
-                color: $title-color;
-            }
+        .on {
+            background-color: #000000;
         }
-        .description {
-            font-size: 2.9em;
-            margin-left: 8px;
-            opacity: 0.5;
+        .tw {
+            background-color: #FFFFFF;
+        }
+        .tr {
+            background-color: #C2C7D6;
+            margin-right: 2%;
+        }
+        .fo {
+            background-color: $success-color;
+        }
+        .fi {
+            background-color: $warning-color;
+        }
+        .si {
+            background-color: $error-color;
+        }
+        .se {
+            background-color: $info-color;
         }
     }
-    .main__image {
-        width: 20%;
-        height: 100%;
-        background-color: #E09137;
-    }
 }
 
-.courses {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-    article {
-        margin-top: 5%;
-        width: 30em;
-        height: 24.15em;
-        background-color: #B1CA9C;
-    }
-    .marketing {
-        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
-        background-size: cover;
-    }
-    .financial-managment {
-        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
-        background-size: cover;
-    }
-    .mindfullness {
-        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
-        background-size: cover;
-    }
-}
-
-.courses-description {
+.component {
+    background-color: rgba($color: #C2C7D6, $alpha: 0.5);
+    padding: 10%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    gap: 30px;
-    div {
-        width: 80em;
-        height: 20em;
-        background-color: $title-color;
+    gap: 10px;
+    .button--variant {
+        border: solid 1px #5d1e1e;
+        border-style: dashed;
+        border-radius: 10px;
+        padding: 2%;
+        width: fit-content;
+        button {
+            width: 10rem;
+            height: 3rem;
+            border-radius: 14px;
+        }
+        .default {
+            border: solid 2px #B1CA9C;
+        }
+        .hovered {
+            background-color: #B1CA9C;
+        }
+        .disabled {
+            background-color: rgba($color: #B1CA9C, $alpha: 0.5);
+        }
+    }
+    .search-bar--variant {
+        border: solid 1px #5d1e1e;
+        border-style: dashed;
+        border-radius: 10px;
+        padding: 2%;
+        width: fit-content;
+        /*limitado*/.one {
+            display: flex;
+            flex-direction: row;
+            width: 15rem;
+            height: 3rem;
+            margin: 5px;
+            border-radius: 10rem;
+            background-color: #F1E8B0;
+            align-items: center;
+            .category {
+                width: 30%;
+            }
+            .search-place {
+                width: 69%;
+            }
+        }
+        .search-bar--hovered{
+            border: solid 2px #81531F;
+        }
     }
 }
 
-//-----------------------------------------//
+.field--variant {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    div {
+        width: 10rem;
+        height: 10rem;
+    }
+    .field--default {
+        background-color: rgba($color: #C2C7D6, $alpha: 0.5);
+    }
+    .field--filling {
+        background-color: rgba($color: #C2C7D6, $alpha: 0.5);
+        border: solid 2px;
+        border-color: #A4C18B;
+    }
+    .field--error {
+        background-color: rgba($color: #C2C7D6, $alpha: 0.5);
+        border: solid 2px;
+        border-color: $error-color;
+    }
+}
 
-
-
+.effects {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    div {
+        width: 10rem;
+        height: 10rem;
+    }
+    .on {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 8px rgba(132, 132, 132, 0.25);
+        border-radius: 12px;
+    }
+    .tw {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(132, 132, 132, 0.25);
+        border-radius: 12px;
+    }
+    .tr {
+        background: #FFFFFF;
+        box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+    }
+    .fo {
+        background: #FFFFFF;
+        box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+    .focus {
+        background: #FFFFFF;
+        border: 1px solid #536B40;
+        box-shadow: 0px 0px 0px 2px #033F63;
+        border-radius: 12px;
+    }
+    .btn-link {
+        background: #424530;
+        border-radius: 24px;
+    }
+}
