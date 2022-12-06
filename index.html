@@ -4,83 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>design system</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>
-        design system
-    </h1>
-    <section class="colours">
-        <h2>
-            brand colours
-        </h2>
-        <div class="brand-colours">
-            <div class="on"></div>
-            <div class="tw"></div>
-            <div class="tr"></div>
-            <div class="fo"></div>
-            <div class="fi"></div>
-            <div class="si"></div>
+    <header>
+        <a id="menu" href="#">
+            <img src="./images/menu.svg" alt="">
+        </a> 
+        <a id="logo" href="./index.html"><img src="./images/NEVERS2LATE.svg" alt=""></a>
+        <div class="search-bar">
+            <div class="category">
+                <p>
+                    category
+                </p>
+                <a href="">
+                <img src="./images/seemore.png" alt="">
+                </a>
+            </div>
+            <div class="searchere">
+                <p>
+                    search here
+                </p>
+                <img src="./images/search.svg" alt="">
+            </div>
         </div>
+        <a id="account" href="#">
+            <img src="./images/account.svg" alt="">
+        </a>
+    </header>
 
-        <h2>
-            others
-        </h2>
-        <div class="others">
-            <div class="on"></div>
-            <div class="tw"></div>
-            <div class="tr"></div>
-            <div class="fo">success</div>
-            <div class="fi">warning</div>
-            <div class="si">error</div>
-            <div class="se">info</div>
-        </div>
-    </section>
-    <h2>
-        components
-    </h2>
-    <section class="component">
-        
-        <div class="button--variant">
-            <h3>
-                button variant
-            </h3>
-            <button class="default">default</button>
-            <button class="hovered">hovered</button>
-            <button class="disabled">disabled</button>
-        </div>
-        <div class="search-bar--variant">
-            <h3>
-                search bar variant
-            </h3>
-            <div class="one search-bar--default">
-                default
+    <main class="welcome-page__main">
+        <h1 class="title">
+            what are you waiting for?
+        </h1>
+        <div class="main__information">
+            <div class="description">
+                <p >
+                    start now and build your future
+                </p>
             </div>
-            <div class="one search-bar--hovered">
-                filling
+            <div class="information">
+                <p>
+                    Lorem ipsum dolor sit amet, conse    ctetur adipiscing elit, sed do eiusm od tempor incididunt ut labore et d
+                    olore magna aliqua.
+                </p>
             </div>
+            <a id="start-btn" href="./pages/ourCourses.html"><p>let's start!</p> <img src="./images/Vector (15).png" alt=""></a>
         </div>
-    </section>
-    <h2>
-        field
-    </h2>
-    <section class="field--variant">
-        
-        <div class="field--default">default</div>
-        <div class="field--filling">filling</div>
-        <div class="field--error">error</div>
-    </section>
-    <h2>
-        effects
-    </h2>
-    <section class="effects">
-        <div class="on">idk</div>
-        <div class="tw">idk</div>
-        <div class="tr">idk</div>
-        <div class="fo">idk</div>
-        <div class="focus">focus</div>
-        <div class="btn-link">btn or link</div>
-    </section>
+        <div class="main__image">
+            <img class="img" src="./images/Find the way.svg" alt="">
+            <nav>
+                <img src="./images/Vector (13).png" alt="">
+                <img src="./images/Vector (14).png" alt="">
+            </nav>
+        </div>
+    </main>
 </body>
 </html>
