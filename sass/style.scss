@@ -1,3 +1,15 @@
+$success-color: #97C2B6;
+$error-color: #D80027;
+
+$brand-color-brown:#6A461D;
+$brand-color-orange:#E09137;
+$brand-color-yellow:#FECE2F;
+$brand-color-light-yellow:#FEE282;
+$brand-color-cream:#FFEBAC;
+$brand-color-light-green:#B1CA9C;
+$brand-color-green:#5A6352;
+
+
 $title-color: #E09137;
 * {
     padding: 0;
@@ -16,7 +28,7 @@ body {
 }
 
 header {
-    background-color: #E09137;
+    background-color: $brand-color-orange;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,63 +36,33 @@ header {
     padding: 0% 5% 0% 1.8%;
     align-items: center;
     font-size: auto;
+    width: 100%;
+    height: 20%;
+    background-color: $brand-color-orange;
     #menu {
         width: 23%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 0.5em;
-        margin-right: 10%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        gap: 0.5em; 
     }
     #logo {
-        width: 60%;
+        color: #F1E8B0;  
         height: 100%;
         text-transform: uppercase;
-        color: #F1E8B0;
-        img {
-            width: 100%;
-            height: 98%;
-            margin-top: 2%;
-        }
+        width: 60%;
     }
     .search-bar {
-        background-color: #FECE2F;
-        opacity: 0.4;
-        display: flex;
-        flex-direction: row;
-        width: 30%;
-        height: 60%;
-        border-radius: 0.85rem;
-        align-items: center;
-        margin-left: 1rem;
-        div {
-            display: flex;
-            flex-direction: row;
-        }
-        .category {
-            width: 28%;
-            height: 100%;
-            padding: 2%;
-            border-right: solid 0.1em;
-            border-color: black;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            p {
-                margin-left: 1em;
-                font-size: 1.1em;
-            }
-            a {
-                margin-left: 10%;
-                width: 20%;
-                height: 100%;
-            }
-        }
+      align-items: center;
+      border: solid .1875rem;
+      border-color: $brand-color-cream;
+      border-radius: 0.85rem;
+      color: $brand-color-cream;
+      display: flex;
+      flex-direction: row;
+      height: 60%;
+      width: 12%;
+       
         .searchere {
             display: flex;
             flex-direction: row;
@@ -101,9 +83,7 @@ header {
         display: flex;
         align-items: center;
         margin-left: 1em;
-        img {
-            width: 100%;
-        }
+       
     }
 }
 h1::first-letter {
