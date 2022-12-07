@@ -1,4 +1,16 @@
+$success-color: #97C2B6;
+$error-color: #D80027;
 
+$brand-color-brown:#6A461D;
+$brand-color-orange:#E09137;
+$brand-color-yellow:#FECE2F;
+$brand-color-light-yellow:#FEE282;
+$brand-color-cream:#FFEBAC;
+$brand-color-light-green:#B1CA9C;
+$brand-color-green:#5A6352;
+
+
+$title-color: #E09137;
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +28,7 @@ body {
 }
 
 header {
-    background-color: #E09137;
+    background-color: $brand-color-orange;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,29 +36,21 @@ header {
     padding: 0% 5% 0% 1.8%;
     align-items: center;
     font-size: auto;
+    width: 100%;
+    height: 20%;
+    background-color: $brand-color-orange;
     #menu {
         width: 23%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 0.5em;
-        margin-right: 10%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        gap: 0.5em; 
     }
     #logo {
-        width: 60%;
+        color: #F1E8B0;  
         height: 100%;
         text-transform: uppercase;
-        color: #F1E8B0;
-        img {
-            width: 100%;
-            height: 98%;
-            margin-top: 2%;
-        }
+        width: 60%;
     }
     .search-bar {
         background-color: #2ffe4b;
@@ -81,6 +85,16 @@ header {
                 height: 100%;
             }
         }
+      align-items: center;
+      border: solid .1875rem;
+      border-color: $brand-color-cream;
+      border-radius: 0.85rem;
+      color: $brand-color-cream;
+      display: flex;
+      flex-direction: row;
+      height: 60%;
+      width: 12%;
+       
         .searchere {
             display: flex;
             flex-direction: row;
@@ -101,14 +115,16 @@ header {
         display: flex;
         align-items: center;
         margin-left: 1em;
-        img {
-            width: 100%;
-        }
+       
     }
 }
 h1::first-letter {
     text-transform: capitalize;
 }
+
+//-----------------------------------------//
+
+//mainpage
 .welcome-page__main {
     width: 90%;
     height: max-content;
@@ -121,7 +137,7 @@ h1::first-letter {
         grid-area: title;
         width: 100%;
         font-size: 7.5em;
-        color: #E09137;
+        color: $title-color;
     }
     .main__information{
         grid-area: main__information;
@@ -182,7 +198,76 @@ h1::first-letter {
 
 }
 
+//-----------------------------------------//
 
+//our courses
+.courses-page__main {
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: row;
+    .main__information {
+        .tittle-oc {
+            width: 100%;
+            height: 65%;
+            font-size: 100%;
+            h1 {
+                font-size: 8em; 
+                color: $title-color;
+            }
+        }
+        .description {
+            font-size: 2.9em;
+            margin-left: 8px;
+            opacity: 0.5;
+        }
+    }
+    .main__image {
+        width: 20%;
+        height: 100%;
+        background-color: #E09137;
+    }
+}
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    article {
+        margin-top: 5%;
+        width: 30em;
+        height: 24.15em;
+        background-color: #B1CA9C;
+    }
+    .marketing {
+        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+        background-size: cover;
+    }
+    .financial-managment {
+        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+        background-size: cover;
+    }
+    .mindfullness {
+        background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+        background-size: cover;
+    }
+}
+
+.courses-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+    div {
+        width: 80em;
+        height: 20em;
+        background-color: $title-color;
+    }
+}
+
+//-----------------------------------------//
 
 
 

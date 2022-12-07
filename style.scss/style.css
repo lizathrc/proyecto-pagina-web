@@ -181,4 +181,56 @@ h1::first-letter {
   height: 100%;
 }
 
+.courses-page__main {
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: row; }
+  .courses-page__main .main__information .tittle-oc {
+    width: 100%;
+    height: 65%;
+    font-size: 100%; }
+    .courses-page__main .main__information .tittle-oc h1 {
+      font-size: 8em;
+      color: #E09137; }
+  .courses-page__main .main__information .description {
+    font-size: 2.9em;
+    margin-left: 8px;
+    opacity: 0.5; }
+  .courses-page__main .main__image {
+    width: 20%;
+    height: 100%;
+    background-color: #E09137; }
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%; }
+  .courses article {
+    margin-top: 5%;
+    width: 30em;
+    height: 24.15em;
+    background-color: #B1CA9C; }
+  .courses .marketing {
+    background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+    background-size: cover; }
+  .courses .financial-managment {
+    background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+    background-size: cover; }
+  .courses .mindfullness {
+    background: url(file:///Users/gustavo.morales/Downloads/marketing.svg) no-repeat;
+    background-size: cover; }
+
+.courses-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  gap: 30px; }
+  .courses-description div {
+    width: 80em;
+    height: 20em;
+    background-color: #E09137; }
+
 /*# sourceMappingURL=style.css.map */
