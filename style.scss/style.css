@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+}
+* a {
+  text-decoration: none;
+}
+* .title {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 6rem;
+  color: #E09137;
+}
+* .description {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.25rem;
+  opacity: 60%;
+}
+* #btn-default {
+  align-items: center;
+  background-color: white;
+  border-radius: 24px;
+  border: 3px solid #B1CA9C;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 6px 20px;
+}
+* #btn-default a {
+  color: #5A6352;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6875rem;
+  gap: 8px;
+  letter-spacing: 0.15em;
+  margin: 20px 20px;
+  padding: 6px, 20px, 6px, 20px;
+  text-transform: uppercase;
+  /* Inside auto layout */
+  flex-grow: 0;
+  flex: none;
+  order: 0;
+}
+* #btn-default a img {
+  width: 10px;
+  height: 16px;
+  margin-top: 10px;
+}
+* #btn-default:hover {
+  background-color: #B1CA9C;
+}
+* #btn-default:disabled {
+  opacity: 70%;
+}
+
+header {
+  background-color: #E09137;
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+}
+header #logo {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  letter-spacing: 2.56px;
+  color: #FFEBAC;
+  margin-left: 5%;
+}
+header .search-bar {
+  border: solid 3px;
+  border-color: #FFEBAC;
+  border-radius: 30px;
+  width: 245px;
+  padding: 10px;
+  margin: 0;
+  margin-left: 4%;
+}
+header .search-bar .searchere {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #FFEBAC;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+header .search-bar button {
+  border: none;
+  background: none;
+}
+header .account-menu {
+  margin-left: auto;
+  margin-right: 6%;
+  margin-top: auto;
+}
+header .account-menu #account {
+  margin-right: 20px;
+}
+
+#welcome-page__main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#welcome-page__main .information {
+  font-family: "Karla", sans-serif;
+  font-size: 2.25rem;
+  justify-self: left;
+  margin-top: 14%;
+  margin-bottom: 14%;
+}
+#welcome-page__main #main-section {
+  display: flex;
+  flex-direction: row;
+}
+#welcome-page__main button {
+  margin-left: 30%;
+}
+#welcome-page__main .main-img {
+  width: 608px;
+  height: 455px;
+}
+
+/*# sourceMappingURL=style.css.map */
