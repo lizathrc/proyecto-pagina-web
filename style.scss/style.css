@@ -15,6 +15,9 @@
   font-size: 2.25rem;
   opacity: 60%;
 }
+* #title-section {
+  margin-bottom: 14%;
+}
 * #btn-default {
   align-items: center;
   background-color: white;
@@ -99,30 +102,131 @@ header .account-menu #account {
   margin-right: 20px;
 }
 
-#welcome-page__main {
+main {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   margin-top: 7%;
   margin-left: 10%;
   margin-right: 10%;
 }
-#welcome-page__main .information {
+main .information {
   font-family: "Karla", sans-serif;
   font-size: 2.25rem;
   justify-self: left;
-  margin-top: 14%;
   margin-bottom: 14%;
 }
-#welcome-page__main #main-section {
+main #main-section {
   display: flex;
   flex-direction: row;
 }
-#welcome-page__main button {
+main button {
   margin-left: 30%;
 }
-#welcome-page__main .main-img {
+main .main-img {
   width: 608px;
   height: 455px;
+}
+
+#courses-page__main {
+  display: flex;
+  flex-direction: row;
+}
+
+#courses {
+  margin-bottom: 14%;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  justify-content: center;
+}
+#courses article {
+  border: solid 5px;
+  background-color: #FEE282;
+  border-color: #FECE2F;
+  border-radius: 30px 0px 30px 0px;
+  height: 293.72px;
+  padding: 1%;
+  width: 357.8px;
+  opacity: 60%;
+}
+#courses .mindfullness img {
+  margin-top: 4%;
+}
+#courses article:hover {
+  border: solid 5px;
+  background-color: #FEE282;
+  border-color: #FECE2F;
+  border-radius: 30px 0px 30px 0px;
+  height: 293.72px;
+  padding: 1%;
+  width: 357.8px;
+  opacity: 100%;
+}
+#courses article:focus {
+  border: solid 5px;
+  background-color: #FEE282;
+  border-color: #FECE2F;
+  border-radius: 30px 0px 30px 0px;
+  height: 293.72px;
+  padding: 1%;
+  width: 357.8px;
+  opacity: 100%;
+}
+
+#courses-description h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #E09137;
+}
+#courses-description section {
+  display: flex;
+  background-color: white;
+  border: solid 3px;
+  border-color: #FECE2F;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+  padding: 1%;
+}
+#courses-description section:hover {
+  background-color: #FECE2F;
+  border: solid 3px;
+  border-color: #FECE2F;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+}
+#courses-description .number {
+  color: #E09137;
+  font-family: "Karla", sans-serif;
+  font-size: 8rem;
+}
+#courses-description p {
+  color: #6A461D;
+  font-family: "Karla", sans-serif;
+  font-size: 2.25rem;
+}
+#courses-description #btn-default p {
+  font-family: "Nunito", sans-serif;
+  color: #5A6352;
+  font-weight: bold;
+  font-size: 1.6875rem;
+}
+#courses-description .midd-container {
+  margin-left: 2%;
+  margin-right: 1%;
+}
+#courses-description .midd-container button {
+  border: none;
+  background: none;
+}
+#courses-description .midd-container button p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
