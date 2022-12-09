@@ -1,6 +1,4 @@
-$success-color: #97C2B6;
-$error-color: #D80027;
-
+/* colors */
 $brand-color-brown:#6A461D;
 $brand-color-orange:#E09137;
 $brand-color-yellow:#FECE2F;
@@ -8,10 +6,10 @@ $brand-color-light-yellow:#FEE282;
 $brand-color-cream:#FFEBAC;
 $brand-color-light-green:#B1CA9C;
 $brand-color-green:#5A6352;
-
+/* font */
 $karla-font: 'Karla', sans-serif;
 $nunito-font: 'Nunito', sans-serif;
-
+/* mixin */
 @mixin section-rectangle {
   display: flex;
   background-color: white;
@@ -32,7 +30,31 @@ $nunito-font: 'Nunito', sans-serif;
   margin-bottom: 1%;
   width: 859px;
 }
-
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin nunito-cream {
+  color: $brand-color-cream;
+  font-family: $nunito-font;
+}
+@mixin anchor{
+  border: solid 5px;
+  background-color: $brand-color-light-yellow;
+  border-color: $brand-color-yellow;
+  border-radius: 30px 0px 30px 0px;
+  height: 293.72px;
+  padding: 1%;
+  width: 357.8px;
+}
+@mixin karla-orange {
+  color: $brand-color-orange;
+  font-family: $karla-font;
+}
 *{
   margin: auto;
   a{
@@ -114,23 +136,25 @@ $nunito-font: 'Nunito', sans-serif;
     opacity: 70%;
   }
 }
-
 header{
+  @include flex-row;
   background-color: $brand-color-orange;
   width: 100%;
   padding: 1%;
-  display: flex;
-  flex-direction: row;
-
+  button{
+    border: none;
+    background: none;
+   }
     #logo{
-      font-family: $nunito-font;
+      @include nunito-cream;
       font-weight: 900;
       font-size: 2.25rem;
       letter-spacing: 2.56px;
-      color: $brand-color-cream;
       margin-left: 5%;
     }
-
+    #account{
+      margin-right: 20px;
+    }
     .search-bar{
       border: solid 3px;
       border-color: $brand-color-cream;
@@ -140,166 +164,104 @@ header{
       margin: 0;
       margin-left: 4%;
       margin-right: 40%;
-
-     .searchere{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      color: $brand-color-cream;
-      font-family: $nunito-font;
-      font-weight: bold;
-     }
-
-     button{
-      border: none;
-      background: none;
-     }
+      .searchere{
+        @include flex-row;
+        @include nunito-cream;
+        justify-content: space-between;
+        font-weight: bold;
+      }
     }
-
     .account-menu{
       margin-left: auto;
       margin-right: 6%;
       margin-top: auto;
-
-      #account{
-        margin-right: 20px;
-      }
     }
-
 }
-
 main{
+  @include flex-column;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
   margin-top: 7%;
   margin-left: 10%;
   margin-right: 10%;
-
+  button{
+    margin-left: 30%;
+  }
+  #main-section{
+    @include flex-row;
+    .main-img{
+      width: 608px;
+      height: 455px;
+    }
+  }
   .information{
     font-family: $karla-font;
     font-size: 2.25rem;
     justify-self: left;
     margin-bottom: 14%;
   }
-
-  #main-section{
-    display: flex;
-    flex-direction: row;
-  }
-
-  button{
-    margin-left: 30%;
-  }
-
-  .main-img{
-    width: 608px;
-    height: 455px;
-  }
 }
-
-#courses-page__main{
-  display: flex;
-  flex-direction: row;
+#btn-default{
+    p{
+    font-family: $nunito-font;
+    color: $brand-color-green;
+    font-weight: bold;
+    font-size: 1.6875rem;
+    }
 }
-
 #courses-container{
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   margin-bottom: 5%;
-}
-.courses{
-  margin-bottom: 4%;
-  display: flex;
-  flex-direction: row;
-  gap: 3%;
-  justify-content: center;
-  .a-courses{
-    border: solid 5px;
-    background-color: $brand-color-light-yellow;
-    border-color: $brand-color-yellow;
-    border-radius: 30px 0px 30px 0px;
-    height: 293.72px;
-    padding: 1%;
-    width: 357.8px;
-    opacity: 60%;
-  }
-
-  .a-courses:focus{
-    border: solid 5px;
-    background-color: $brand-color-light-yellow;
-    border-color: $brand-color-yellow;
-    border-radius: 30px 0px 30px 0px;
-    height: 293.72px;
-    padding: 1%;
-    width: 357.8px;
-    opacity: 100%;
-     }
-
-     .a-courses:hover{
-    border: solid 5px;
-    background-color: $brand-color-light-yellow;
-    border-color: $brand-color-yellow;
-    border-radius: 30px 0px 30px 0px;
-    height: 293.72px;
-    padding: 1%;
-    width: 357.8px;
-    opacity: 100%;
+  .courses{
+    @include flex-row;
+    gap: 3%;
+    justify-content: center;
+    margin-bottom: 4%;
+    .a-courses{
+      @include anchor;
+      opacity: 60%;
     }
-    
-  .mindfullness{
-    img{
-      margin-top: 4%;
+    .a-courses:hover{
+      @include anchor;
+      opacity: 100%;
+    }
+    .a-courses:focus{
+      @include anchor;
+      opacity: 100%;
+       }
+    .mindfullness{
+      img{
+        margin-top: 4%;
+      }
     }
   }
 }
-
 #courses-description{
-  display: flex;
-  flex-direction: column;
-
+  @include flex-column;
   h2{
-    font-family: $karla-font;
-    font-weight: bolder;
+    @include karla-orange;
     font-size: 2.5rem;
-    color: $brand-color-orange;
+    font-weight: bolder;
   }
-
   section{
     @include section-rectangle;
   }
-
   section:hover{
     @include section-rectangle__hover()
   }
-
-  .number{
-    color: $brand-color-orange;
-    font-family: $karla-font;
-    font-size: 8rem;
-  }
-
-  p{
+  .info-p{
     color: $brand-color-brown;
     font-family: $karla-font;
     font-size: 2.25rem;
   }
-
-  #btn-default{
-    p{
-      font-family: $nunito-font;
-      color: $brand-color-green;
-      font-weight: bold;
-      font-size: 1.6875rem;
-    }
+  .number{
+    @include karla-orange;
+    font-size: 8rem;
   }
-
   .midd-container{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     p{
       margin: auto;
-      margin-left: 10%;    
+      margin-left: 4%; 
     }
     button{
       opacity: 60%;
@@ -311,18 +273,14 @@ main{
       }
       img{
         margin-left: 10px;
-
       }
     }
   }
 }
-
 #connect-hero{
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   .article-content{
-    margin-left: 23%;
-    margin-right: 24%;
+    margin: 0 24% 0 23%;
     display: flex;
     .phrase-container{ 
       margin-left: 10%;
@@ -350,7 +308,6 @@ main{
     margin-bottom: 5%;
   }
 }
-
 #connect-page__main{
   section{
     flex-direction: column;
@@ -365,31 +322,27 @@ main{
     display: flex;
     gap: 50%;
     p{
+      color: $brand-color-orange;
       font-family: $nunito-font;
       font-size: 2rem;
       font-weight: 500;
-      color: $brand-color-orange;
     }
     .connect-user{
       display: flex;
       p{
+        color: $brand-color-brown;
         font-family: $karla-font;
         font-size: 1.25rem;
-        color: $brand-color-brown;
         opacity: 60%;
       }
     }
-
     .icon-use:hover{
       fill: $brand-color-orange;
     }
   }
-
   .connect-bottom{
-    margin-left: 7%;
-    margin-right: 7%;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+    margin: 6% 7% 0 7%;
     P{
       font-size: 1.5rem;
       font-family: $karla-font;
@@ -401,8 +354,6 @@ main{
     }
   }
 }
-
-
 @media screen and (max-width: 840px) {
   // body {
   //   background-color: #6A461D;
@@ -500,7 +451,6 @@ main{
     }
   }
 }
-
 @media screen and (max-width: 840px) {
   // body {
   //   background-color: #6A461D;

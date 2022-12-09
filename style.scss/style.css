@@ -1,3 +1,6 @@
+/* colors */
+/* font */
+/* mixin */
 * {
   margin: auto;
 }
@@ -67,19 +70,26 @@
 }
 
 header {
+  display: flex;
+  flex-direction: row;
   background-color: #E09137;
   width: 100%;
   padding: 1%;
-  display: flex;
-  flex-direction: row;
+}
+header button {
+  border: none;
+  background: none;
 }
 header #logo {
+  color: #FFEBAC;
   font-family: "Nunito", sans-serif;
   font-weight: 900;
   font-size: 2.25rem;
   letter-spacing: 2.56px;
-  color: #FFEBAC;
   margin-left: 5%;
+}
+header #account {
+  margin-right: 20px;
 }
 header .search-bar {
   border: solid 3px;
@@ -94,31 +104,35 @@ header .search-bar {
 header .search-bar .searchere {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   color: #FFEBAC;
   font-family: "Nunito", sans-serif;
+  justify-content: space-between;
   font-weight: bold;
-}
-header .search-bar button {
-  border: none;
-  background: none;
 }
 header .account-menu {
   margin-left: auto;
   margin-right: 6%;
   margin-top: auto;
 }
-header .account-menu #account {
-  margin-right: 20px;
-}
 
 main {
-  justify-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 7%;
   margin-left: 10%;
   margin-right: 10%;
+}
+main button {
+  margin-left: 30%;
+}
+main #main-section {
+  display: flex;
+  flex-direction: row;
+}
+main #main-section .main-img {
+  width: 608px;
+  height: 455px;
 }
 main .information {
   font-family: "Karla", sans-serif;
@@ -126,21 +140,12 @@ main .information {
   justify-self: left;
   margin-bottom: 14%;
 }
-main #main-section {
-  display: flex;
-  flex-direction: row;
-}
-main button {
-  margin-left: 30%;
-}
-main .main-img {
-  width: 608px;
-  height: 455px;
-}
 
-#courses-page__main {
-  display: flex;
-  flex-direction: row;
+#btn-default p {
+  font-family: "Nunito", sans-serif;
+  color: #5A6352;
+  font-weight: bold;
+  font-size: 1.6875rem;
 }
 
 #courses-container {
@@ -148,15 +153,14 @@ main .main-img {
   flex-direction: column;
   margin-bottom: 5%;
 }
-
-.courses {
-  margin-bottom: 4%;
+#courses-container .courses {
   display: flex;
   flex-direction: row;
   gap: 3%;
   justify-content: center;
+  margin-bottom: 4%;
 }
-.courses .a-courses {
+#courses-container .courses .a-courses {
   border: solid 5px;
   background-color: #FEE282;
   border-color: #FECE2F;
@@ -166,7 +170,7 @@ main .main-img {
   width: 357.8px;
   opacity: 60%;
 }
-.courses .a-courses:focus {
+#courses-container .courses .a-courses:hover {
   border: solid 5px;
   background-color: #FEE282;
   border-color: #FECE2F;
@@ -176,7 +180,7 @@ main .main-img {
   width: 357.8px;
   opacity: 100%;
 }
-.courses .a-courses:hover {
+#courses-container .courses .a-courses:focus {
   border: solid 5px;
   background-color: #FEE282;
   border-color: #FECE2F;
@@ -186,7 +190,7 @@ main .main-img {
   width: 357.8px;
   opacity: 100%;
 }
-.courses .mindfullness img {
+#courses-container .courses .mindfullness img {
   margin-top: 4%;
 }
 
@@ -195,10 +199,10 @@ main .main-img {
   flex-direction: column;
 }
 #courses-description h2 {
-  font-family: "Karla", sans-serif;
-  font-weight: bolder;
-  font-size: 2.5rem;
   color: #E09137;
+  font-family: "Karla", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
 }
 #courses-description section {
   display: flex;
@@ -220,21 +224,15 @@ main .main-img {
   margin-bottom: 1%;
   width: 859px;
 }
-#courses-description .number {
-  color: #E09137;
-  font-family: "Karla", sans-serif;
-  font-size: 8rem;
-}
-#courses-description p {
+#courses-description .info-p {
   color: #6A461D;
   font-family: "Karla", sans-serif;
   font-size: 2.25rem;
 }
-#courses-description #btn-default p {
-  font-family: "Nunito", sans-serif;
-  color: #5A6352;
-  font-weight: bold;
-  font-size: 1.6875rem;
+#courses-description .number {
+  color: #E09137;
+  font-family: "Karla", sans-serif;
+  font-size: 8rem;
 }
 #courses-description .midd-container {
   display: flex;
@@ -242,7 +240,7 @@ main .main-img {
 }
 #courses-description .midd-container p {
   margin: auto;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 #courses-description .midd-container button {
   opacity: 60%;
@@ -262,8 +260,7 @@ main .main-img {
   flex-direction: column;
 }
 #connect-hero .article-content {
-  margin-left: 23%;
-  margin-right: 24%;
+  margin: 0 24% 0 23%;
   display: flex;
 }
 #connect-hero .article-content .phrase-container {
@@ -318,28 +315,27 @@ main .main-img {
   gap: 50%;
 }
 #connect-page__main .connect-top p {
+  color: #E09137;
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  color: #E09137;
 }
 #connect-page__main .connect-top .connect-user {
   display: flex;
 }
 #connect-page__main .connect-top .connect-user p {
+  color: #6A461D;
   font-family: "Karla", sans-serif;
   font-size: 1.25rem;
-  color: #6A461D;
   opacity: 60%;
 }
 #connect-page__main .connect-top .icon-use:hover {
   fill: #E09137;
 }
 #connect-page__main .connect-bottom {
-  margin-left: 7%;
-  margin-right: 7%;
   display: flex;
   flex-direction: column;
+  margin: 6% 7% 0 7%;
 }
 #connect-page__main .connect-bottom P {
   font-size: 1.5rem;
