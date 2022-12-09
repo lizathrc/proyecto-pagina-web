@@ -318,10 +318,36 @@ main{
 
 #connect-page__main{
   section{
+    flex-direction: column;
     @include section-rectangle;
   }
   .section:hover{
     @include section-rectangle__hover()
+  }
+
+  .connect-top{
+    margin: 0%;
+    display: flex;
+    gap: 50%;
+    p{
+      font-family: $nunito-font;
+      font-size: 2rem;
+      font-weight: 500;
+      color: $brand-color-orange;
+    }
+    .connect-user{
+      display: flex;
+      p{
+        font-family: $karla-font;
+        font-size: 1.25rem;
+        color: $brand-color-brown;
+        opacity: 60%;
+      }
+    }
+
+    .icon-use:hover{
+      fill: $brand-color-orange;
+    }
   }
 }
 
@@ -412,11 +438,148 @@ main{
       .main__image {
         position: absolute;
         width: 60%;
+        top: 30%;
         right: 10px;
         padding-right: 20px;
         .main-img {
             margin: 0%;
             width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  // body {
+  //   background-color: #6A461D;
+  // }
+  header {
+    width: 100%;
+    align-items: center;
+    .search-bar {
+      border: solid $brand-color-orange;
+      margin-left: 4px;
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      transition: all 1s;
+      .searchere {
+        margin: 0;
+        width: 30px;
+        p {
+          position: absolute;
+          margin: 0;
+          visibility: hidden;
+        }
+      }
+    }
+    .account-menu {
+      width: fit-content;
+      display: flex;
+      gap: 2px;
+      // a {
+      //   border: solid 1px ;
+      // }
+      #account {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+  #welcome-page__main {
+    margin: 0;
+    width: 100%;
+    padding: 0px 12px;
+    #title-section {
+      .title {
+        @include titles;
+      }
+      .main__information {
+        .description {
+          @include descriptions;
+        }
+      }
+    }
+    #main-section {
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      .info-container {
+        width: 47.5%;
+        .information {
+          p {
+            font-size: 0.6em;
+          }
+        }
+        #btn-default {
+          position: absolute;
+          top: 70%;
+          left: 1%;
+          width: 200px;
+          height: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          transition: all 600ms;
+          a {
+            width: 100%;
+            p {
+              font-size: 0.3em;
+            }
+          }
+        }
+      }
+      .main__image {
+        position: absolute;
+        width: 60%;
+        top: 30%; 
+        right: 10px;
+        padding-right: 20px;
+        .main-img {
+            margin: 0%;
+            width: 100%;
+        }
+      }
+    }
+  }
+  #title-section {
+    padding: 0% 2%;
+    .main__title {
+      width: 70%;
+      font-size: 12px;
+      margin: auto;
+      .title {
+        @include titles;
+      }
+      .description {
+        @include descriptions;
+      }
+    }
+    .main__image {
+      position: absolute;
+      scale: 0.6;
+      top: 15%;
+      left: 50%;
+    }
+  }
+  #courses-container {
+    .courses {
+      margin-top: 100px;
+      width: 100%;
+      height: auto;
+      max-height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .a-courses {
+        width: 70%;
+        height: auto;
+        transition: all 600ms;
+        article {
+          img {
+            width: 80%;
+          }
         }
       }
     }
