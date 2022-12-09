@@ -19,7 +19,14 @@
   opacity: 60%;
 }
 * #title-section {
+  display: flex;
   margin-bottom: 14%;
+}
+* #title-section .main__title {
+  margin-right: 0%;
+}
+* #title-section .main__image {
+  margin-left: 0%;
 }
 * #btn-default {
   align-items: center;
@@ -247,6 +254,27 @@ main .main-img {
 }
 #courses-description .midd-container button img {
   margin-left: 10px;
+}
+
+#connect-page__main section {
+  display: flex;
+  background-color: white;
+  border: solid 3px;
+  border-color: #FECE2F;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+  padding: 1%;
+}
+#connect-page__main .section:hover {
+  background-color: #FECE2F;
+  border: solid 3px;
+  border-color: #FECE2F;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
 }
 
 /*# sourceMappingURL=style.css.map */

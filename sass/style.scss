@@ -12,6 +12,27 @@ $brand-color-green:#5A6352;
 $karla-font: 'Karla', sans-serif;
 $nunito-font: 'Nunito', sans-serif;
 
+@mixin section-rectangle {
+  display: flex;
+  background-color: white;
+  border: solid 3px;
+  border-color: $brand-color-yellow;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+  padding: 1%;
+}
+@mixin section-rectangle__hover{
+  background-color: #FECE2F;
+  border: solid 3px;
+  border-color: $brand-color-yellow;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+}
+
 *{
   margin: auto;
   a{
@@ -37,7 +58,14 @@ $nunito-font: 'Nunito', sans-serif;
   }
 
   #title-section{
+    display: flex;
     margin-bottom: 14%;
+    .main__title{
+      margin-right: 0%;
+    }
+    .main__image{
+      margin-left: 0%;
+    }
   }
 
   #btn-default{
@@ -237,26 +265,11 @@ main{
   }
 
   section{
-    display: flex;
-    background-color: white;
-    border: solid 3px;
-    border-color: $brand-color-yellow;
-    border-radius: 7px;
-    height: 269px;
-    margin-bottom: 1%;
-    width: 859px;
-    padding: 1%;
-
+    @include section-rectangle;
   }
 
   section:hover{
-    background-color: #FECE2F;
-    border: solid 3px;
-    border-color: $brand-color-yellow;
-    border-radius: 7px;
-    height: 269px;
-    margin-bottom: 1%;
-    width: 859px;
+    @include section-rectangle__hover()
   }
 
   .number{
@@ -300,6 +313,15 @@ main{
 
       }
     }
+  }
+}
+
+#connect-page__main{
+  section{
+    @include section-rectangle;
+  }
+  .section:hover{
+    @include section-rectangle__hover()
   }
 }
 
