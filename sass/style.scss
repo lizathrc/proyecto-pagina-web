@@ -60,6 +60,7 @@ $nunito-font: 'Nunito', sans-serif;
   #title-section{
     display: flex;
     margin-bottom: 14%;
+    margin-top: 10%;
     .main__title{
       margin-right: 0%;
     }
@@ -316,12 +317,46 @@ main{
   }
 }
 
+#connect-hero{
+  display: flex;
+  flex-direction: column;
+  .article-content{
+    margin-left: 23%;
+    margin-right: 24%;
+    display: flex;
+    .phrase-container{ 
+      margin-left: 10%;
+      .phrase{
+        margin-left: 5%;
+      }
+     }
+    p{
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 600;
+      font-family: $karla-font;
+    }
+    .autor{
+      font-size: 1.5rem;
+      opacity: 60%;
+      margin-left: 82%;
+    }
+    .arrow-right{
+      margin-left: 97%;
+    }
+  }
+  .arrow{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
 #connect-page__main{
   section{
     flex-direction: column;
     @include section-rectangle;
   }
-  .section:hover{
+  section:hover{
     @include section-rectangle__hover()
   }
 
@@ -347,6 +382,22 @@ main{
 
     .icon-use:hover{
       fill: $brand-color-orange;
+    }
+  }
+
+  .connect-bottom{
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    P{
+      font-size: 1.5rem;
+      font-family: $karla-font;
+      font-weight: 600;
+      color: $brand-color-brown;
+    }
+    img{
+      margin-top: 5%;
     }
   }
 }
@@ -493,11 +544,11 @@ main{
     padding: 0px 12px;
     #title-section {
       .title {
-        @include titles;
-      }
+/*         @include titles;
+ */      }
       .main__information {
         .description {
-          @include descriptions;
+     /*      @include descriptions; */
         }
       }
     }
@@ -550,10 +601,10 @@ main{
       font-size: 12px;
       margin: auto;
       .title {
-        @include titles;
+ /*        @include titles; */
       }
       .description {
-        @include descriptions;
+/*         @include descriptions; */
       }
     }
     .main__image {
