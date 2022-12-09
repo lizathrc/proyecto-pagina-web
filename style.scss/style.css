@@ -148,7 +148,7 @@ main .main-img {
   gap: 3%;
   justify-content: center;
 }
-.courses a {
+.courses .a-courses {
   border: solid 5px;
   background-color: #FEE282;
   border-color: #FECE2F;
@@ -158,7 +158,7 @@ main .main-img {
   width: 357.8px;
   opacity: 60%;
 }
-.courses a:focus {
+.courses .a-courses:focus {
   border: solid 5px;
   background-color: #FEE282;
   border-color: #FECE2F;
@@ -168,7 +168,7 @@ main .main-img {
   width: 357.8px;
   opacity: 100%;
 }
-.courses a:hover {
+.courses .a-courses:hover {
   border: solid 5px;
   background-color: #FEE282;
   border-color: #FECE2F;

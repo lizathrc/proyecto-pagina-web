@@ -185,7 +185,7 @@ main{
   flex-direction: row;
   gap: 3%;
   justify-content: center;
-  a{
+  .a-courses{
     border: solid 5px;
     background-color: $brand-color-light-yellow;
     border-color: $brand-color-yellow;
@@ -196,7 +196,7 @@ main{
     opacity: 60%;
   }
 
-  a:focus{
+  .a-courses:focus{
     border: solid 5px;
     background-color: $brand-color-light-yellow;
     border-color: $brand-color-yellow;
@@ -207,7 +207,7 @@ main{
     opacity: 100%;
      }
 
-  a:hover{
+     .a-courses:hover{
     border: solid 5px;
     background-color: $brand-color-light-yellow;
     border-color: $brand-color-yellow;
