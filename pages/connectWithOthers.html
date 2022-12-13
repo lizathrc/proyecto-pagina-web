@@ -5,40 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../sass/style.scss" />
+    <link rel="stylesheet" href="../style.scss/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <a id="menu" href="#">
-        <img src="./images/menu.svg" alt="" />
+      <a id="logo" href="./index.html">
+        <p>NEVER'S2LATE</p>
       </a>
-      <a id="logo" href="./index.html"
-        ><img src="./images/NEVERS2LATE.svg" alt=""
-      /></a>
+  
       <div class="search-bar">
-        <div class="category">
-          <p>category</p>
-          <a href="">
-            <img src="./images/seemore.png" alt="" />
-          </a>
-        </div>
         <div class="searchere">
           <p>search here</p>
-          <img src="./images/search.svg" alt="" />
+          <button>
+            <img src="../images/si_Search.svg" alt="" />
+          </button>
         </div>
       </div>
-      <a id="account" href="#">
-        <img src="./images/account.svg" alt="" />
-      </a>
-    </header>
-    <div class="tittle">
-      <h1>our courses</h1>
+  
     </div>
+  
+      <div class="account-menu">
+        <a id="account" href="#">
+          <img src="../images/si_User_alt_3.svg" alt="" />
+        </a>
+        <a id="menu" href="#">
+          <img src="../images/si_More_muted_vert_square.svg" alt="" />
+        </a>
+      </div>
+    </header>
+
+    <section id="connect-container">
+      <section id="connect-hero">
+        <div id="title-section">
+          <div class="main__title">
+            <div class="title">
+              <h1>Connect with others</h1>
+            </div>
+            <div class="description">
+              <p>articles,experience and more </p>
+            </div>
+          </div>
+      
+          <div class="main__image">
+            <img src="../images/cat-sitting.svg" alt="" />
+          </div>
+        </div>
+      
+        <div class="article-content">
+          <img src="../images/connect/square.svg" alt="">
+          <div class="phrase-container">
+            <img src="../images/connect/comillas-left.svg" alt="">
+              <div class="phrase">
+                <p>Lorem ipsum dolor sit amet, conse
+                  ctetur adipiscing elit, sed do eiusm
+                  od tempor incididunt ut labore et d
+                </p>
+                <p class="autor">
+                  -lorem
+                </p>
+              </div>
+            <img class="arrow-right" src="../images/connect/comillas-right.svg" alt="">
+          </div>
+        </div>
+  
+        <div class="arrow">
+          <img src="../images/connect/si_Chevron_left_alt.svg" alt="">
+          <img src="../images/connect/si_Chevron_right_alt.png" alt="">
+        </div>
+      </section>
+    
+      <section id="connect-page__main">
+        <section>
+  
+          <div class="connect-top">
+  
+           <div class="title-user">
+            <p>TITLE</p>
+            <div class="connect-user">
+              <img src="../images/connect/si_User_alt_2.svg" alt="">
+              <p>unknow</p>
+            </div>
+           </div>
+            <div class="connect-icon">
+              <svg class="icon-use" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7555 4.24094C24.7422 4.24094 26.6476 5.02949 28.0533 6.43344C28.7497 7.12962 29.3022 7.95621 29.6791 8.86595C30.056 9.77566 30.25 10.7507 30.25 11.7355C30.25 12.7202 30.056 13.6952 29.6791 14.605C29.3022 15.5147 28.7497 16.3413 28.0533 17.0375L27.162 17.9371L25.9792 19.1116L16.558 28.5328L7.13687 19.1116L5.95401 17.9371L5.06273 17.0375C4.34179 16.3473 3.76589 15.5202 3.36883 14.6045C2.97178 13.6889 2.76155 12.7031 2.75046 11.7052C2.73938 10.7072 2.92767 9.71707 3.30428 8.79284C3.68091 7.86858 4.2383 7.02888 4.94373 6.32289C5.64917 5.6169 6.48847 5.05886 7.41241 4.68151C8.33636 4.30416 9.32633 4.1151 10.3243 4.1254C11.3223 4.13569 12.3082 4.34514 13.2241 4.74148C14.1401 5.13781 14.9677 5.71304 15.6584 6.43344L16.558 7.33309L17.4576 6.43344C18.8633 5.02949 20.7688 4.24094 22.7555 4.24094Z" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+  
+                <svg class="icon-use" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.125 22H22.6531C22.2406 22 21.8453 22.1891 21.5875 22.5156L17.5656 27.5344C17.0156 28.2219 15.9672 28.2219 15.4172 27.5344L11.3953 22.5156C11.1375 22.1891 10.7422 22 10.3297 22H6.875C4.58906 22 2.75 20.1609 2.75 17.875V8.25C2.75 5.96406 4.58906 4.125 6.875 4.125H26.125C28.4109 4.125 30.25 5.96406 30.25 8.25V17.875C30.25 20.1609 28.4109 22 26.125 22Z" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M11 11H22" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                  <path d="M11 15.125H22" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                  </svg>
+                  
+  
+              <svg class="icon-use" width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 23.4092C16.7994 23.4092 16.5164 23.5084 16.1673 23.6947C15.821 23.8795 15.4193 24.1446 14.9843 24.4643C14.1145 25.1035 13.1177 25.9568 12.1744 26.8113C11.2314 27.6655 10.343 28.52 9.69031 29.1609C9.364 29.4813 9.09665 29.7483 8.91091 29.9352C8.81804 30.0287 8.74557 30.1021 8.69634 30.1521L8.64027 30.2092L8.62237 30.2275L8.62125 30.2286C8.60145 30.2489 8.57089 30.2555 8.5442 30.2451C8.51751 30.2347 8.5 30.2096 8.5 30.1816V6.10199C8.5 4.24456 10.0348 2.75 11.9421 2.75H22.0579C23.9652 2.75 25.5 4.24456 25.5 6.10199V30.1816C25.5 30.2096 25.4825 30.2347 25.4558 30.2451C25.4291 30.2555 25.3986 30.249 25.3788 30.2287L25.3776 30.2275L25.3597 30.2092L25.3037 30.1521C25.2544 30.1021 25.182 30.0287 25.0891 29.9352C24.9033 29.7483 24.636 29.4813 24.3097 29.1609C23.657 28.52 22.7686 27.6655 21.8256 26.8113C20.8823 25.9568 19.8855 25.1035 19.0157 24.4643C18.5807 24.1446 18.179 23.8795 17.8327 23.6947C17.4836 23.5084 17.2006 23.4092 17 23.4092Z" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                </svg>
+            </div>
+  
+          </div>
+  
+          <div class="connect-bottom">
+            <div>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusm od tempor incididunt.</p>
+            </div>
+            <img src="../images/connect/Vector.svg" alt="">
+          </div>
+  
+        </section>
+  
+        <section>
+  
+          <div class="connect-top">
+  
+           <div class="title-user">
+            <p>TITLE</p>
+            <div class="connect-user">
+              <img src="../images/connect/si_User_alt_2.svg" alt="">
+              <p>unknow</p>
+            </div>
+           </div>
+            <div class="connect-icon">
+              <svg class="icon-use" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7555 4.24094C24.7422 4.24094 26.6476 5.02949 28.0533 6.43344C28.7497 7.12962 29.3022 7.95621 29.6791 8.86595C30.056 9.77566 30.25 10.7507 30.25 11.7355C30.25 12.7202 30.056 13.6952 29.6791 14.605C29.3022 15.5147 28.7497 16.3413 28.0533 17.0375L27.162 17.9371L25.9792 19.1116L16.558 28.5328L7.13687 19.1116L5.95401 17.9371L5.06273 17.0375C4.34179 16.3473 3.76589 15.5202 3.36883 14.6045C2.97178 13.6889 2.76155 12.7031 2.75046 11.7052C2.73938 10.7072 2.92767 9.71707 3.30428 8.79284C3.68091 7.86858 4.2383 7.02888 4.94373 6.32289C5.64917 5.6169 6.48847 5.05886 7.41241 4.68151C8.33636 4.30416 9.32633 4.1151 10.3243 4.1254C11.3223 4.13569 12.3082 4.34514 13.2241 4.74148C14.1401 5.13781 14.9677 5.71304 15.6584 6.43344L16.558 7.33309L17.4576 6.43344C18.8633 5.02949 20.7688 4.24094 22.7555 4.24094Z" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+  
+                <svg class="icon-use" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.125 22H22.6531C22.2406 22 21.8453 22.1891 21.5875 22.5156L17.5656 27.5344C17.0156 28.2219 15.9672 28.2219 15.4172 27.5344L11.3953 22.5156C11.1375 22.1891 10.7422 22 10.3297 22H6.875C4.58906 22 2.75 20.1609 2.75 17.875V8.25C2.75 5.96406 4.58906 4.125 6.875 4.125H26.125C28.4109 4.125 30.25 5.96406 30.25 8.25V17.875C30.25 20.1609 28.4109 22 26.125 22Z" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M11 11H22" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                  <path d="M11 15.125H22" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                  </svg>
+                  
+  
+              <svg class="icon-use" width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 23.4092C16.7994 23.4092 16.5164 23.5084 16.1673 23.6947C15.821 23.8795 15.4193 24.1446 14.9843 24.4643C14.1145 25.1035 13.1177 25.9568 12.1744 26.8113C11.2314 27.6655 10.343 28.52 9.69031 29.1609C9.364 29.4813 9.09665 29.7483 8.91091 29.9352C8.81804 30.0287 8.74557 30.1021 8.69634 30.1521L8.64027 30.2092L8.62237 30.2275L8.62125 30.2286C8.60145 30.2489 8.57089 30.2555 8.5442 30.2451C8.51751 30.2347 8.5 30.2096 8.5 30.1816V6.10199C8.5 4.24456 10.0348 2.75 11.9421 2.75H22.0579C23.9652 2.75 25.5 4.24456 25.5 6.10199V30.1816C25.5 30.2096 25.4825 30.2347 25.4558 30.2451C25.4291 30.2555 25.3986 30.249 25.3788 30.2287L25.3776 30.2275L25.3597 30.2092L25.3037 30.1521C25.2544 30.1021 25.182 30.0287 25.0891 29.9352C24.9033 29.7483 24.636 29.4813 24.3097 29.1609C23.657 28.52 22.7686 27.6655 21.8256 26.8113C20.8823 25.9568 19.8855 25.1035 19.0157 24.4643C18.5807 24.1446 18.179 23.8795 17.8327 23.6947C17.4836 23.5084 17.2006 23.4092 17 23.4092Z" stroke="#E09137" stroke-width="1.5" stroke-miterlimit="10" stroke-linejoin="round"/>
+                </svg>
+            </div>
+  
+          </div>
+  
+          <div class="connect-bottom">
+            <div>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do eiusm od tempor incididunt.</p>
+            </div>
+            <img src="../images/connect/Vector.svg" alt="">
+          </div>
+  
+        </section>
+      </section>
+    </section>
+  
+
   </body>
 </html>

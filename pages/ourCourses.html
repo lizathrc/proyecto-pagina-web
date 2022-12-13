@@ -1,78 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style.scss/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../sass/style.scss" />
+    <link rel="stylesheet" href="../style.scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <a id="menu" href="#">
-            <img src="../images/menu.svg" alt="">
-        </a> 
-        <a id="logo" href="../index.html"><img src="../images/NEVERS2LATE.svg" alt=""></a>
-        <div class="search-bar">
-            <div class="category">
-                <p>
-                    category
-                </p>
-                <a href="">
-                <img src="../images/seemore.png" alt="">
-                </a>
-            </div>
-            <div class="searchere">
-                <p>
-                    search here
-                </p>
-                <img src="../images/search.svg" alt="">
-            </div>
+      <a id="logo" href="./index.html">
+        <p>NEVER'S2LATE</p>
+      </a>
+
+      <div class="search-bar">
+        <div class="searchere">
+          <p>search here</p>
+          <button>
+            <img src="../images/si_Search.svg" alt="" />
+          </button>
         </div>
+      </div>
+
+    </div>
+
+      <div class="account-menu">
         <a id="account" href="#">
-            <img src="../images/account.svg" alt="">
+          <img src="../images/si_User_alt_3.svg" alt="" />
         </a>
+        <a id="menu" href="#">
+          <img src="../images/si_More_muted_vert_square.svg" alt="" />
+        </a>
+      </div>
     </header>
-    <main class="courses-page__main">
-        <div class="main__information">
-            <div class="tittle-oc">
-                <h1>
-                    our courses
-                </h1>
-            </div>
-            <div class="description">
-                <p>
-                    find out our courses to start
-                </p>
-            </div>
+
+    
+    <div id="title-section">
+      <div class="main__title">
+        <div class="title">
+          <h1>Our courses</h1>
         </div>
-        <div class="main__image">
-            <img src="" alt="">
+        <div class="description">
+          <p>find out our courses to start  </p>
         </div>
-    </main>
-    <section class="courses">
-        <article class="marketing">
+      </div>
+  
+      <div class="main__image">
+        <img src="../images/cat-sitting.svg" alt="" />
+      </div>
+    </div>
 
-        </article>
-        <article class="financial-managment">
+    <section id="courses-container" class="section-rectangle">
+      <div class="courses">
+        <a href="#marketing-description" class="a-courses">
+          <article class="marketing" >
+            <img src="../images/our-courses/marketing_img.svg" alt="">
+          </article>
+        </a>
+        <a href="#" class="a-courses">
+          <article class="financial-managment">
+            <img src="../images/our-courses/financial_img.svg" alt="">
+          </article>
+        </a>
+        <a href="#" class="a-courses">
+          <article class="mindfullness">
+            <img src="../images/our-courses/mindfulness _img.svg" alt="">
+          </article>
+        </a>
+      </div>
 
-        </article>
-        <article class="mindfullness">
+    <img src="../images/our-courses/arrow.svg" alt="">
 
-        </article>
     </section>
-    <section class="courses-description">
-        <div class="marketing-info">
 
-        </div>
-        <div class="financial-info">
 
-        </div>
-        <div class="mindfullness-info">
+    <section id="courses-description">
 
-        </div>
+      <h2 id="marketing-description">MARKETING</h2>
+
+        <section class="marketing-info">
+          <p class="number">01</p>
+  
+          <div class="midd-container">
+            <p class="info-p">Lorem ipsum dolor sit amet, co
+              ctetur adipiscing elit, sed do ei
+              od tempor incididunt ut labore 
+            </p>
+            <button>
+              <p class="info-p">more</p>
+              <img src="../images/our-courses/si_Expand_more.svg" alt="">
+            </button>
+          </div>
+  
+          <div>
+            <img src="../images/our-courses/Track-statistics.svg" alt="">
+            <a href="#" id="btn-default"> <p>START</p> </a>
+          </div>
+        
+        </section>
+  
+        <section class="financial-info">
+          <p class="number">02</p>
+  
+          <div class="midd-container">
+            <p class="info-p">Lorem ipsum dolor sit amet, co
+              ctetur adipiscing elit, sed do ei
+              od tempor incididunt ut labore 
+            </p>
+            <button>
+              <p class="info-p">more</p>
+              <img src="../images/our-courses/si_Expand_more.svg" alt="">
+            </button>
+          </div>
+  
+          <div>
+            <img src="../images/our-courses/Car-rental.svg" alt="">
+            <a href="#" id="btn-default"> <p>START</p> </a>
+          </div>
+        </section>
+  
+        <section class="mindfullness-info">
+          <p class="number">03</p>
+  
+          <div class="midd-container">
+            <p class="info-p">Lorem ipsum dolor sit amet, co
+              ctetur adipiscing elit, sed do ei
+              od tempor incididunt ut labore 
+            </p>
+            <button>
+              <p class="info-p">more</p>
+              <img src="../images/our-courses/si_Expand_more.svg" alt="">
+            </button>
+          </div>
+  
+          <div>
+            <img src="../images/our-courses/Order-completed.svg" alt="">
+            <a href="#" id="btn-default"> <p>START</p> </a>
+          </div>
+        </section>
+      
+
+    
+
     </section>
-</body>
+  </body>
+</html>

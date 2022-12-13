@@ -1,0 +1,588 @@
+/* colors */
+$brand-color-brown:#6A461D;
+$brand-color-orange:#E09137;
+$brand-color-yellow:#FECE2F;
+$brand-color-light-yellow:#FEE282;
+$brand-color-cream:#FFEBAC;
+$brand-color-light-green:#B1CA9C;
+$brand-color-green:#5A6352;
+/* font */
+$karla-font: 'Karla', sans-serif;
+$nunito-font: 'Nunito', sans-serif;
+/* mixin */
+@mixin section-rectangle {
+  display: flex;
+  background-color: white;
+  border: solid 3px;
+  border-color: $brand-color-yellow;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+  padding: 1%;
+}
+@mixin section-rectangle__hover{
+  background-color: #FECE2F;
+  border: solid 3px;
+  border-color: $brand-color-yellow;
+  border-radius: 7px;
+  height: 269px;
+  margin-bottom: 1%;
+  width: 859px;
+}
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin nunito-cream {
+  color: $brand-color-cream;
+  font-family: $nunito-font;
+}
+@mixin anchor{
+  border: solid 5px;
+  background-color: $brand-color-light-yellow;
+  border-color: $brand-color-yellow;
+  border-radius: 30px 0px 30px 0px;
+  height: 293.72px;
+  padding: 1%;
+  width: 357.8px;
+}
+@mixin karla-orange {
+  color: $brand-color-orange;
+  font-family: $karla-font;
+}
+*{
+  margin: auto;
+  a{
+    text-decoration: none;
+  }
+
+  .title{
+    font-family: $nunito-font;
+    font-weight: bold;
+    font-size: 6rem;
+    color: $brand-color-orange;
+  }
+
+  .title-main{
+    margin-right: 90px;
+
+  }
+
+  .description{
+    font-family: $nunito-font;
+    font-size: 2.25rem;
+    opacity: 60%;
+  }
+
+  #title-section{
+    display: flex;
+    margin-bottom: 14%;
+    margin-top: 10%;
+    .main__title{
+      margin-right: 0%;
+    }
+    .main__image{
+      margin-left: 0%;
+    }
+  }
+
+  #btn-default{
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    border: 3px solid $brand-color-light-green;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px 20px;
+ 
+    a{
+      color: $brand-color-green;
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      font-family: $nunito-font;
+      font-size: 1.6875rem;
+      gap: 8px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+
+      /* Inside auto layout */
+
+      flex-grow: 0;
+      flex: none;
+      order: 0;
+
+      img{
+        width: 10px;
+        height: 16px;
+        margin-top: 10px;
+      }
+      }
+
+    
+  }
+  
+  #btn-default:hover{
+    background-color: $brand-color-light-green;
+  }
+
+  #btn-default:disabled{
+    opacity: 70%;
+  }
+}
+header{
+  @include flex-row;
+  background-color: $brand-color-orange;
+  width: 100%;
+  padding: 1%;
+  button{
+    border: none;
+    background: none;
+   }
+    #logo{
+      @include nunito-cream;
+      font-weight: 900;
+      font-size: 2.25rem;
+      letter-spacing: 2.56px;
+      margin-left: 5%;
+    }
+    #account{
+      margin-right: 20px;
+    }
+    .search-bar{
+      border: solid 3px;
+      border-color: $brand-color-cream;
+      border-radius: 30px;
+      width: 245px;
+      padding: 10px;
+      margin: 0;
+      margin-left: 4%;
+      margin-right: 40%;
+      .searchere{
+        @include flex-row;
+        @include nunito-cream;
+        justify-content: space-between;
+        font-weight: bold;
+      }
+    }
+    .account-menu{
+      margin-left: auto;
+      margin-right: 6%;
+      margin-top: auto;
+    }
+}
+main{
+  @include flex-column;
+  justify-content: center;
+  margin-top: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
+  button{
+    margin-left: 30%;
+  }
+  #main-section{
+    @include flex-row;
+    .main-img{
+      width: 608px;
+      height: 455px;
+    }
+  }
+  .information{
+    font-family: $karla-font;
+    font-size: 2.25rem;
+    justify-self: left;
+    margin-bottom: 14%;
+  }
+}
+#btn-default{
+    p{
+    font-family: $nunito-font;
+    color: $brand-color-green;
+    font-weight: bold;
+    font-size: 1.6875rem;
+    }
+}
+#courses-container{
+  @include flex-column;
+  margin-bottom: 5%;
+  .courses{
+    @include flex-row;
+    gap: 3%;
+    justify-content: center;
+    margin-bottom: 4%;
+    .a-courses{
+      @include anchor;
+      opacity: 60%;
+    }
+    .a-courses:hover{
+      @include anchor;
+      opacity: 100%;
+    }
+    .a-courses:focus{
+      @include anchor;
+      opacity: 100%;
+       }
+    .mindfullness{
+      img{
+        margin-top: 4%;
+      }
+    }
+  }
+}
+#courses-description{
+  @include flex-column;
+  h2{
+    @include karla-orange;
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  section{
+    @include section-rectangle;
+  }
+  section:hover{
+    @include section-rectangle__hover()
+  }
+  .info-p{
+    color: $brand-color-brown;
+    font-family: $karla-font;
+    font-size: 2.25rem;
+  }
+  .number{
+    @include karla-orange;
+    font-size: 8rem;
+  }
+  .midd-container{
+    @include flex-column;
+    p{
+      margin: auto;
+      margin-left: 4%; 
+    }
+    button{
+      opacity: 60%;
+      border: none;
+      background: none;
+      p{
+        font-family: $nunito-font;
+        font-size: 1.5rem;
+      }
+      img{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+#connect-hero{
+  @include flex-column;
+  .article-content{
+    margin: 0 24% 0 23%;
+    display: flex;
+    .phrase-container{ 
+      margin-left: 10%;
+      .phrase{
+        margin-left: 5%;
+      }
+     }
+    p{
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 600;
+      font-family: $karla-font;
+    }
+    .autor{
+      font-size: 1.5rem;
+      opacity: 60%;
+      margin-left: 82%;
+    }
+    .arrow-right{
+      margin-left: 97%;
+    }
+  }
+  .arrow{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+#connect-page__main{
+  section{
+    flex-direction: column;
+    @include section-rectangle;
+  }
+  section:hover{
+    @include section-rectangle__hover()
+  }
+
+  .connect-top{
+    margin: 0%;
+    display: flex;
+    gap: 50%;
+    p{
+      color: $brand-color-orange;
+      font-family: $nunito-font;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .connect-user{
+      display: flex;
+      p{
+        color: $brand-color-brown;
+        font-family: $karla-font;
+        font-size: 1.25rem;
+        opacity: 60%;
+      }
+    }
+    .icon-use:hover{
+      fill: $brand-color-orange;
+    }
+  }
+  .connect-bottom{
+    @include flex-column;
+    margin: 6% 7% 0 7%;
+    P{
+      font-size: 1.5rem;
+      font-family: $karla-font;
+      font-weight: 600;
+      color: $brand-color-brown;
+    }
+    img{
+      margin-top: 5%;
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  // body {
+  //   background-color: #6A461D;
+  // }
+  header {
+    width: 100%;
+    align-items: center;
+    .search-bar {
+      border: solid $brand-color-orange;
+      margin-left: 4px;
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      transition: all 1s;
+      .searchere {
+        margin: 0;
+        width: 30px;
+        p {
+          position: absolute;
+          margin: 0;
+          visibility: hidden;
+        }
+      }
+    }
+    .account-menu {
+      width: fit-content;
+      display: flex;
+      gap: 2px;
+      // a {
+      //   border: solid 1px ;
+      // }
+      #account {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+  #welcome-page__main {
+    margin: 0;
+    width: 100%;
+    padding: 0px 12px;
+    #title-section {
+      .title {
+        margin: auto;
+        font-size: 2em;
+        transition: all 600ms;
+      }
+      .main__information {
+        .description {
+          font-size: 1em;
+        transition: all 600ms;
+        }
+      }
+    }
+    #main-section {
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      .info-container {
+        width: 47.5%;
+        .information {
+          p {
+            font-size: 0.6em;
+          }
+        }
+        #btn-default {
+          position: absolute;
+          top: 70%;
+          left: 1%;
+          width: 200px;
+          height: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          transition: all 600ms;
+          a {
+            width: 100%;
+            p {
+              font-size: 0.3em;
+            }
+          }
+        }
+      }
+      .main__image {
+        position: absolute;
+        width: 60%;
+        top: 30%;
+        right: 10px;
+        padding-right: 20px;
+        .main-img {
+            margin: 0%;
+            width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  // body {
+  //   background-color: #6A461D;
+  // }
+  header {
+    width: 100%;
+    align-items: center;
+    .search-bar {
+      border: solid $brand-color-orange;
+      margin-left: 4px;
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      transition: all 1s;
+      .searchere {
+        margin: 0;
+        width: 30px;
+        p {
+          position: absolute;
+          margin: 0;
+          visibility: hidden;
+        }
+      }
+    }
+    .account-menu {
+      width: fit-content;
+      display: flex;
+      gap: 2px;
+      // a {
+      //   border: solid 1px ;
+      // }
+      #account {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+  #welcome-page__main {
+    margin: 0;
+    width: 100%;
+    padding: 0px 12px;
+    #title-section {
+      .title {
+/*         @include titles;
+ */      }
+      .main__information {
+        .description {
+     /*      @include descriptions; */
+        }
+      }
+    }
+    #main-section {
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      .info-container {
+        width: 47.5%;
+        .information {
+          p {
+            font-size: 0.6em;
+          }
+        }
+        #btn-default {
+          position: absolute;
+          top: 70%;
+          left: 1%;
+          width: 200px;
+          height: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          transition: all 600ms;
+          a {
+            width: 100%;
+            p {
+              font-size: 0.3em;
+            }
+          }
+        }
+      }
+      .main__image {
+        position: absolute;
+        width: 60%;
+        top: 30%; 
+        right: 10px;
+        padding-right: 20px;
+        .main-img {
+            margin: 0%;
+            width: 100%;
+        }
+      }
+    }
+  }
+  #title-section {
+    padding: 0% 2%;
+    .main__title {
+      width: 70%;
+      font-size: 12px;
+      margin: auto;
+      .title {
+ /*        @include titles; */
+      }
+      .description {
+/*         @include descriptions; */
+      }
+    }
+    .main__image {
+      position: absolute;
+      scale: 0.6;
+      top: 15%;
+      left: 50%;
+    }
+  }
+  #courses-container {
+    .courses {
+      margin-top: 100px;
+      width: 100%;
+      height: auto;
+      max-height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .a-courses {
+        width: 70%;
+        height: auto;
+        transition: all 600ms;
+        article {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

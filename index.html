@@ -10,56 +10,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
-      <a id="logo" href="./index.html"
-        ><img src="./images/NEVERS2LATE.svg" alt="" />
+      <a id="logo" href="./index.html">
+        <p>NEVER'S2LATE</p>
       </a>
 
       <div class="search-bar">
         <div class="searchere">
           <p>search here</p>
-          <img src="./images/search.svg" alt="" />
-          <img src="./images/si_Search.svg" alt="" />
+          <button>
+            <img src="./images/si_Search.svg" alt="" />
+          </button>
         </div>
       </div>
 
-      <a id="account" href="#">
-        <img src="./images/si_User_alt_3.svg" alt="" />
-      </a>
-      <a id="menu" href="#">
-        <img src="./images/si_More_muted_vert_square.svg" alt="" />
-      </a>
+    </div>
+
+      <div class="account-menu">
+        <a id="account" href="#">
+          <img src="./images/si_User_alt_3.svg" alt="" />
+        </a>
+        <a id="menu" href="#">
+          <img src="./images/si_More_muted_vert_square.svg" alt="" />
+        </a>
+      </div>
     </header>
 
-    <main class="welcome-page__main">
-      <h1 class="title">what are you waiting for?</h1>
-      <div class="main__information">
-        <div class="description">
-          <p>start now and build your future</p>
+    <main id="welcome-page__main">
+      <section id="title-section">
+        <div class="main__information">
+          <h1 class="title title-main">What are you waiting for?</h1>
+          <div class="description">
+            <p>start now and build your future</p>
+          </div>
         </div>
-        <div class="information">
-          <p>
-            Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
-            eiusm od tempor incididunt ut labore et d olore magna aliqua.
-          </p>
+      </section>
+
+
+        <section id="main-section">
+          <div class="info-container">
+            <div class="information">
+              <p>
+                "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit, sed do
+                eiusm od tempor incididunt ut labore et d olore magna aliqua."
+              </p>
+            </div>
+    
+           <button id="btn-default" >
+            <a href="./pages/ourCourses.html">
+              <p>let's start!</p>
+              <img src="./images/Vector (15).png" alt=""/>
+            </a>
+           </button>
+          </div>
+          <div class="main__image">
+            <img class="main-img" src="./images/Find the way.svg" alt="" />
+          </div>
+        </section>
+  
         </div>
-        <a id="start-btn" href="./pages/ourCourses.html"
-          ><p>let's start!</p>
-          <img src="./images/Vector (15).png" alt=""
-        /></a>
-      </div>
-      <div class="main__image">
-        <img class="img" src="./images/Find the way.svg" alt="" />
-        <nav>
-          <img src="./images/Vector (13).png" alt="" />
-          <img src="./images/Vector (14).png" alt="" />
-        </nav>
-      </div>
+
     </main>
   </body>
 </html>
